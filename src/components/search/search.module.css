@@ -1,0 +1,35 @@
+@media (max-width: 452px) {
+
+    .formParent,
+    .micParent {
+        border: 2px solid #faf7f7;
+        border-radius: 15px;
+        background-color: #FAF7F7;
+    }
+
+    .search {
+        padding: 22px 20px;
+        display: var(--flex);
+        flex-direction: var(--row);
+    }
+
+    .formParent {
+        display: var(--flex);
+        flex-direction: var(--row);
+        padding: 10px 0 10px 30px;
+        width: 100%;
+        max-height: 42px;
+    }
+
+    .formInput {
+        border: none;
+        background: none;
+        margin-left: 15px;
+    }
+
+    .micParent {
+        max-width: 50px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+}

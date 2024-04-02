@@ -1,0 +1,19 @@
+@media (max-width: 452px) {
+    .heroParent {
+        display: var(--flex);
+        flex-direction: var(--row);
+        justify-content: space-between;
+        /* background-color: var(--pri-color); */
+        padding: 50px 20px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .heroText {
+        font-size: 20px;
+        /* color: var(--ter-color); */
+    }
+
+    .heroImg {
+        width: 40%;
+    }
+}
