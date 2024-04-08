@@ -15,25 +15,57 @@
     --ter-color: #e7dfd4;
     --flex: flex;
     --row: row;
-    /* --text: #945d36; */
+    --text: #945d36;
 }
 
-.t-color {
-    /* text:var(--pri-color) */
-    fill: var(--ter-color);
 
-}
 
 body {
     /*  display: none; */
     font-size: 14px;
 }
 
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.width {
+    width: 100%;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.align {
+    align-items: center;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 @media (max-width: 452px) {
     body {
         display: flex;
         flex-direction: column;
-        /* width: 100%; */
-        /* padding: 20px; */
+
     }
+
+
 }

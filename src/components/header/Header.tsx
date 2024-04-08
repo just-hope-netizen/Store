@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./header.module.css"
-import logo from "../../assets/svg/logo.svg";
-import menu from "../../assets/svg/menu.svg";
-import user from "../../assets/svg/user.svg";
+import logo from "../../assets/icons/logo.svg";
+import menu from "../../assets/icons/menu.svg";
+import bag from "../../assets/icons/shoppingBag.svg";
+import { IconButton } from "../iconButton";
+import { Menu } from "../menu";
+import { Backdrop } from "../backdrop";
+
 
 const Header: React.FC = () => {
-    return <header className={style.header}>
-        <div className={style.imgsParent}>
-            <button className={style.menuParent}>
-                <img src={menu} alt="menu" className="" />
-            </button>
-            <img src={logo} alt="logo" className={style.logo} />
-            <img src={user} alt="" />
-        </div>
+    const [showMenu, setShowMenu] = useState<boolean>(false);
 
-    </header>
+
+    const buttonHandler = () => {
+        setShowMenu(!showMenu)
+    }
+    return <>
+
+        <header>
+            <div className={`flex-row ${style.imgsParent}`}>
+                <IconButton src={menu} alt={"menu"} onClick={buttonHandler} />
+                <img src={logo} alt="logo" className={style.logo} />
+                <IconButton src={bag} alt={"shoppig bag"} onClick={buttonHandler} />
+            </div>
+
+        </header>
+        <Menu onClick={buttonHandler} slide={showMenu ? "menu slide" : ""} />
+        <Backdrop onClick={buttonHandler} slide={showMenu} />
+
+    </>
 };
 
 export default Header;

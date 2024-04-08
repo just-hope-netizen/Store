@@ -1,0 +1,28 @@
+@media (max-width: 452px) {
+    .menu {
+        /* background-color:rgb(131, 122, 122); */
+        background-color: #faf7f7;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        left: 0;
+        overflow: hidden;
+        transition: right 1s;
+    }
+
+    .menu.slide {
+        right: 50%;
+    }
+
+    .link {
+        padding: 10px 20px;
+    }
+
+    .icon {
+        margin-right: 10px;
+    }
+
+
+
+}

@@ -3,18 +3,18 @@ import { Header } from "../../components/header";
 import "./home.module.css"
 import { Hero } from "../../components/hero";
 import { Search } from "../../components/search";
-import logo from "../../assets/svg/logo.svg"
+import { Menu } from "../../components/menu";
 
 interface props {
 
     // name: string
 }
 
-const Home: React.FC<props> = () => {
+const Home = () => {
     return <div className="home">
         <Header />
         <Search />
-        {logo}
+
         {/* </> */}
     </div>
 

@@ -1,18 +1,7 @@
 @media (max-width: 452px) {
-    .header {}
-
     .imgsParent {
-        display: var(--flex);
-        flex-direction: var(--row);
         justify-content: space-between;
-        /* height: 50px; */
         padding: 20px;
-        /* background-color: var(--pri-color); */
-    }
-
-    .menuParent {
-        background: none;
-        border: none;
     }
 
     .logo {

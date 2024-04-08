@@ -24,6 +24,7 @@
     .formInput {
         border: none;
         background: none;
+        outline: none;
         margin-left: 15px;
     }
 
