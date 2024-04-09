@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Header } from "../../components/header";
 import "./home.module.css"
-import { Hero } from "../../components/hero";
 import { Search } from "../../components/search";
-import { Menu } from "../../components/menu";
+import { Product } from "../../types/product.types";
+import axios from "axios";
+import style from "./home.module.css";
+import { fetchProducts } from "../../api/services/getProductData";
+import { ProductCard } from "../../components/productCard";
 
-interface props {
-
-    // name: string
-}
 
 const Home = () => {
+    const [productData, setProductData] = useState<Product[]>([])
+
+    useEffect(() => {
+        fetchProducts().then(res => setProductData(res));
+        // setProductData(data.data)
+
+
+    }, [])
+
     return <div className="home">
         <Header />
         <Search />
+        <ul className={`flex-row wrap ${style.listParent}`}>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+        </ul>
+        {/* {productsData.map} */}
 
-        {/* </> */}
     </div>
 
 }

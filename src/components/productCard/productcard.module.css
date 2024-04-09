@@ -1,0 +1,11 @@
+@media (max-width: 452px) {
+    .card {
+        max-width: 180px;
+        width: 100%;
+        height: 262px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 1px 4px #0003;
+        /* margin: 10px 10px 30px; */
+    }
+}

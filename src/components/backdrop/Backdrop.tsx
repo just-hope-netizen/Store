@@ -7,7 +7,6 @@ type Props = {
 }
 
 const Backdrop = (props: Props) => {
-    console.log(props);
 
     return <div className={`${style.backdrop} ${props.slide ? style.slide : undefined}`}
         onClick={props.onClick}> </div>;
