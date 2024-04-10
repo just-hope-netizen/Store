@@ -3,4 +3,10 @@
         padding: 30px 20px;
         justify-content: space-between;
     }
+
+    .line {
+        margin: 40px 20px;
+        height: 2px;
+        background-color: #faf7f7;
+    }
 }

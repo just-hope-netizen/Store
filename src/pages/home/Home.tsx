@@ -1,27 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Header } from "../../components/header";
 import "./home.module.css"
 import { Search } from "../../components/search";
-import { Product } from "../../types/product.types";
-import axios from "axios";
 import style from "./home.module.css";
-import { fetchProducts } from "../../api/services/getProductData";
 import { ProductCard } from "../../components/productCard";
+import { Hero } from "../../components/hero";
+import { CategoryCard } from "../../components/categoryCard";
 
 
-const Home = () => {
-    const [productData, setProductData] = useState<Product[]>([])
-
-    useEffect(() => {
-        fetchProducts().then(res => setProductData(res));
-        // setProductData(data.data)
+const Home: React.FC = () => {
 
 
-    }, [])
 
     return <div className="home">
         <Header />
         <Search />
+        <Hero />
+        <div className={style.line}> </div>
+        <CategoryCard />
         <ul className={`flex-row wrap ${style.listParent}`}>
             <ProductCard />
             <ProductCard />

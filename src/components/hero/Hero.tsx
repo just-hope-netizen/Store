@@ -4,12 +4,8 @@ import hero from "../../assets/images/hero.webp";
 
 
 const Hero: React.FC = () => {
-    return <section className={""}>
-        <div className={style.heroParent}>
-            <h1 className={style.heroText}>Get new notes when <br /> you withdrawal from <br /> Mama Fred.</h1>
-            <img src={hero} alt="" className={style.heroImg} />
-
-        </div>
+    return <section className={style.hero}>
+        <h2>Shop by category</h2>
 
     </section>
 };
