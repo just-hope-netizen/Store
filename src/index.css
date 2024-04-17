@@ -68,6 +68,10 @@ li {
     list-style-type: none;
 }
 
+img {
+    object-fit: cover;
+}
+
 
 @media (max-width: 452px) {
     body {

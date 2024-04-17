@@ -1,8 +1,8 @@
 import { Product } from "./product.types";
 
-export interface Response {
+export type Response = {
     config: object;
-    data: Product;
+    data: Product[];
     headers: object;
     request: object;
     status: number;

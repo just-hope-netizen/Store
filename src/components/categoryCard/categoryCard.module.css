@@ -1,0 +1,15 @@
+@media (max-width: 452px) {
+    .btnParent {
+        padding: 0 15px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        /* border: 1px solid grey !important; */
+        border-radius: 16px;
+        box-shadow: 0 1px 4px #0003;
+        margin: 5px;
+        font-size: 13px;
+        overflow-x: scroll;
+    }
+}
